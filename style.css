@@ -278,7 +278,7 @@ li {
         cursor: pointer;
         border-radius: 1%;
     }
-
+}
 /* BOTTOM BANNER */
 
 .bottom-banner {
@@ -300,6 +300,7 @@ li {
     .bottom-banner{
         height: 60vh;
     }
+}
 
 /* FOOTER */
 
