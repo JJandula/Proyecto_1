@@ -221,7 +221,7 @@ li {
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 575px){
     .mid-banner{
         height: 30vh;
     }
@@ -270,6 +270,15 @@ li {
     }
 }
 
+@media (max-width: 575px){
+    .mid-grid > div > img {
+        width: 90%;
+        height: 60vh;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 1%;
+    }
+
 /* BOTTOM BANNER */
 
 .bottom-banner {
@@ -286,6 +295,11 @@ li {
         height: 80vh;
     }
 }
+
+@media (max-width: 575px){
+    .bottom-banner{
+        height: 60vh;
+    }
 
 /* FOOTER */
 
