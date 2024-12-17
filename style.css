@@ -83,7 +83,6 @@ li {
     header > nav{
         display: flex;
         align-items: center;
-        
         padding: 0px 20px;
     }
     header > nav > ul > h1 {
@@ -222,6 +221,11 @@ li {
     }
 }
 
+@media (max-width: 375px){
+    .mid-banner{
+        height: 30vh;
+    }
+}
 
 /* MID GRID */
 
