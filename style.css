@@ -191,7 +191,7 @@ li {
     padding: 0px 20px;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
