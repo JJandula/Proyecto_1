@@ -471,14 +471,6 @@ li {
 }
 
 
-@media (max-width: 575px) {
-  .shops {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
 
 /* FOOTER */
 
