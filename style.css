@@ -257,8 +257,7 @@ li {
   cursor: pointer;
 }
 
-
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .mid-grid {
     padding: 40px 0px;
     gap: 20px;
@@ -284,15 +283,14 @@ li {
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin: 20px 0px;
+    margin: 20px 15px;
   }
-  
+
   .mid-grid > div > img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
     cursor: pointer;
-
   }
 }
 /* BOTTOM BANNER */
@@ -317,48 +315,6 @@ li {
     height: 60vh;
   }
 }
-
-/* FOOTER */
-
-.footer-section {
-  display: flex;
-  justify-content: space-around;
-  font-size: 11px;
-  padding: 30px 0px;
-  border: var(--border);
-}
-
-.footer-section > div > ul {
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.footer-section li:first-child {
-  font-weight: bolder;
-}
-
-.copy-text {
-  text-align: center;
-  font-size: 9px;
-  padding: 30px 0px;
-}
-
-@media (max-width: 768px) {
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .footer-section > div > ul {
-    margin-bottom: 50px;
-  }
-  .footer-section > div:last-child > ul {
-    margin-bottom: 0px;
-  }
-}
-
 
 /* LOOKS */
 
@@ -407,7 +363,7 @@ li {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .products-look article:nth-child(7){
+  .products-look article:nth-child(7) {
     display: none;
   }
 }
@@ -417,10 +373,10 @@ li {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .products-look article:nth-child(7){
+  .products-look article:nth-child(7) {
     display: none;
   }
-  .products-look article:nth-child(6){
+  .products-look article:nth-child(6) {
     display: none;
   }
 }
@@ -430,15 +386,15 @@ li {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .products-look article:nth-child(7){
+  .products-look article:nth-child(7) {
     display: none;
   }
 
-  .products-look article:nth-child(6){
+  .products-look article:nth-child(6) {
     display: none;
   }
 
-  .products-look article:nth-child(5){
+  .products-look article:nth-child(5) {
     display: none;
   }
 }
@@ -448,18 +404,110 @@ li {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  .products-look article:nth-child(7){
+  .products-look article:nth-child(7) {
     display: none;
   }
 
-  .products-look article:nth-child(6){
+  .products-look article:nth-child(6) {
     display: none;
   }
 
-  .products-look article:nth-child(5){
+  .products-look article:nth-child(5) {
     display: none;
   }
-  .products-look article:nth-child(4){
+  .products-look article:nth-child(4) {
     display: none;
+  }
+}
+
+/* SHOPS */
+
+.shops {
+  background-image: url("assets/SHOP-LA-ROCA.webp");
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+}
+
+.shops > div {
+  background-color: white;
+  padding: 22px 29px 23px 24px;
+  font-size: 12px;
+  display: grid;
+  margin: 0px 0px 80px 40px;
+  grid-template-areas: 
+  "header header header"
+  "direction days horari"
+  "street street street"
+  "city city city";
+}
+
+.shops > div > h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+  grid-area: header;
+}
+
+.shops > div > p:nth-child(2) {
+  grid-area: direction;
+  margin-right: 20px;
+}
+.shops div p:nth-child(3) {
+  grid-area: days;
+  margin-right: 20px;
+}
+.shops div p:nth-child(4) {
+  grid-area: horari;
+}
+.shops div p:nth-child(5) {
+  grid-area: street;
+}
+.shops div p:nth-child(6) {
+  grid-area: city;
+}
+
+/* FOOTER */
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border: var(--border);
+}
+
+.footer-section > div > ul {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.footer-section li:first-child {
+  font-weight: bolder;
+}
+
+.copy-text {
+  text-align: center;
+  font-size: 9px;
+  padding: 30px 0px;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footer-section > div > ul {
+    margin-bottom: 50px;
+  }
+  .footer-section > div:last-child > ul {
+    margin-bottom: 0px;
   }
 }
