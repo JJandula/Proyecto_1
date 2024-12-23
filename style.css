@@ -30,8 +30,34 @@
   letter-spacing: 0.3px;
 }
 
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile > nav > ul > li {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.menu-mobile > nav {
+  border: 0px;
+  border-bottom: var(--border);
+}
+
+@media (max-width: 700px) {
+  .menu-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu-mobile {
+    font-size: 10px;
+  }
+}
+
 nav {
-  border: var(--border);
+  border-bottom: var(--border);
 }
 
 ul {
@@ -453,11 +479,11 @@ li {
   font-size: 12px;
   display: grid;
   margin: 0px 0px 80px 40px;
-  grid-template-areas: 
-  "header header header"
-  "direction days horari"
-  "street street street"
-  "city city city";
+  grid-template-areas:
+    "header header header"
+    "direction days horari"
+    "street street street"
+    "city city city";
 }
 
 .shops > div > h3 {
@@ -483,8 +509,6 @@ li {
 .shops div p:nth-child(6) {
   grid-area: city;
 }
-
-
 
 /* FOOTER */
 
