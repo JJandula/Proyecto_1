@@ -30,12 +30,6 @@
   letter-spacing: 0.3px;
 }
 
-@media (max-width: 500px) {
-  .top-banner > p {
-    font-size: 10px;
-  }
-}
-
 nav {
   border: var(--border);
 }
