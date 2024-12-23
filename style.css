@@ -470,6 +470,16 @@ li {
   grid-area: city;
 }
 
+
+@media (max-width: 575px) {
+  .shops {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 /* FOOTER */
 
 .footer-section {
